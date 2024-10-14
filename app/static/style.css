@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 20px;
+}
+
+#filter-section {
+    margin-bottom: 20px;
+}
+
+#domain-select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#researchers-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.researcher-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+}
+
+.researcher-card h3 {
+    margin-top: 0;
+}
+
+.researcher-card a {
+    color: #0073e6;
+    text-decoration: none;
+}

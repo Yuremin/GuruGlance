@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Researcher Hub</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CS Researcher Hub</h1>
+        <p>Find top researchers and their homepage across different CS domains.</p>
+    </header>
+
+    <main>
+        <section id="filter-section">
+            <h2>Choose a Research Domain</h2>
+            <select id="domain-select">
+                <option value="all">All Domains</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="ml">Machine Learning</option>
+                <option value="security">Cybersecurity</option>
+                <option value="cv">Computer Vision</option>
+                <option value="nlp">Natural Language Processing</option>
+                <!-- Add more options as per fields in CS -->
+            </select>
+            <button id="filter-btn">Filter</button>
+        </section>
+
+        <section id="researchers-list">
+            <h2>Researchers</h2>
+            <div id="researcher-cards">
+                <!-- Cards populated dynamically via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
